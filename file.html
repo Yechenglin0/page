@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+	#check{
+		margin-top: 2px;
+		margin-left: 2px;
+	}
+	</style>
+</head>
+<body>	
+
+	<form action="upload_file.php" method="post" enctype="multipart/form-data">
+		<img src="gd.php" id="yzm_code" name="yzm_code"  onclick="this.src='gd.php?'+new Date().getTime();"/>  点击图片更换验证码<br>
+		<input type="file" name="file" value="选择上传的图片文件" /> <hr/>
+		<input type="text" name="yzm_code" /><br>
+		<input type="submit" name="submit" value="Submit" /><br>
+	</form>
+</body>
+</html>
